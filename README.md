@@ -1,3 +1,13 @@
+//
+//  ViewController.swift
+//  Fizz Buzz
+//
+//  Created by Bishrut Bhattarai on 10/8/19.
+//  Copyright © 2019 Bishrut Bhattarai. All rights reserved.
+//
+
+
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -42,3 +52,4 @@ func fizzBuzz() {
    printText.text=string1
  }
 }
+ 
