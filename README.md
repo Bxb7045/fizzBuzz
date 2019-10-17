@@ -13,7 +13,9 @@ import UIKit
 class ViewController: UIViewController {
     
 var string1 = ""
+
 var num = ""
+
 var number = 0
     
 @IBOutlet weak var enterText: UITextField!
