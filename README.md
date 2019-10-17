@@ -23,13 +23,18 @@ var number = 0
 @IBOutlet weak var printText: UILabel!
 
 @IBAction func submitText(_ sender: Any) {
+
  fizzBuzz()
+
 }
     
     
 override func viewDidLoad() {
+
  super.viewDidLoad()
+
   fizzBuzz()
+
 }
     
     
