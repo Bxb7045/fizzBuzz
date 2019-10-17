@@ -24,16 +24,16 @@ var number = 0
 
 @IBAction func submitText(_ sender: Any) {
 
- fizzBuzz()
+  fizzBuzz()
 
 }
     
     
 override func viewDidLoad() {
 
- super.viewDidLoad()
+  super.viewDidLoad()
 
-  fizzBuzz()
+   fizzBuzz()
 
 }
     
