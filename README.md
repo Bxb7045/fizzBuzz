@@ -19,7 +19,9 @@ var num = ""
 var number = 0
     
 @IBOutlet weak var enterText: UITextField!
+
 @IBOutlet weak var printText: UILabel!
+
 @IBAction func submitText(_ sender: Any) {
  fizzBuzz()
 }
