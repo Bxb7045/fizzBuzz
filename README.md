@@ -13,28 +13,19 @@ import UIKit
 class ViewController: UIViewController {
     
 var string1 = ""
-
 var num = ""
-
 var number = 0
     
 @IBOutlet weak var enterText: UITextField!
-
 @IBOutlet weak var printText: UILabel!
-
 @IBAction func submitText(_ sender: Any) {
-
-  fizzBuzz()
-
+ fizzBuzz()
 }
     
     
 override func viewDidLoad() {
-
-  super.viewDidLoad()
-
-   fizzBuzz()
-
+ super.viewDidLoad()
+  fizzBuzz()
 }
     
     
@@ -61,4 +52,3 @@ func fizzBuzz() {
    printText.text=string1
  }
 }
- 
