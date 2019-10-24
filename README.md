@@ -15,8 +15,8 @@ class ViewController: UIViewController {
 var string1 = ""
 var num = ""
 var number = 0
-var error1 = "Please type a number."
-var error2 = "Please input a number greater than 99."
+let error1 = "Please type a number."
+let error2 = "Please input a number greater than 99."
 
     
 @IBOutlet weak var enterText: UITextField!
