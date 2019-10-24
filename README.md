@@ -15,6 +15,9 @@ class ViewController: UIViewController {
 var string1 = ""
 var num = ""
 var number = 0
+var error1 = "Please type a number."
+var error2 = "Please input a number greater than 99."
+
     
 @IBOutlet weak var enterText: UITextField!
 @IBOutlet weak var printText: UILabel!
@@ -33,22 +36,30 @@ func fizzBuzz() {
  string1 = ""
  num = enterText.text ?? "1"
  number = Int(num) ?? 1
-  for index in 1...number
-  {
-      if index % 3 == 0 && index % 5 == 0 && index % 7 == 0 {
-       string1 += "FizzBuzzBang"
-    } else if index % 3 == 0 && index % 5 == 0 {
-       string1 += "FizzBuzz, "
-    } else if index % 3 == 0 {
-       string1 += ("Fizz, ")
-    } else if index % 5 == 0 {
-       string1 += ("Buzz, ")
-    } else if index % 7 == 0 {
-       string1 += ("Bang, ")
-    } else {
-       string1 += (String(index) + ", ")
+    if number == 1 {
+         printText.text=error1
+     }
+    else if number <= 99 {
+        printText.text=error2
+    }
+     else {
+     for index in 1...number
+   {
+       if index % 3 == 0 && index % 5 == 0 && index % 7 == 0 {
+        string1 += "FizzBuzzBang"
+     } else if index % 3 == 0 && index % 5 == 0 {
+        string1 += "FizzBuzz, "
+     } else if index % 3 == 0 {
+        string1 += ("Fizz, ")
+     } else if index % 5 == 0 {
+        string1 += ("Buzz, ")
+     } else if index % 7 == 0 {
+        string1 += ("Bang, ")
+     } else {
+        string1 += (String(index) + ", ")
+    }
    }
+    printText.text=string1
   }
-   printText.text=string1
  }
 }
